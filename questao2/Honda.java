@@ -1,0 +1,30 @@
+// SINGLETON da fabricante Honda, mesmo esquema da Toyota.
+public class Honda implements IVehicleMaker {
+
+    private static Honda instancia;
+
+    private Honda() {
+    }
+
+    public static Honda getInstance() {
+        if (instancia == null) {
+            instancia = new Honda();
+        }
+        return instancia;
+    }
+
+    // FACTORY com os modelos da Honda.
+    @Override
+    public IVehicle makeVehicle(String modelo) {
+        switch (modelo.toLowerCase()) {
+            case "city":
+                return new City();
+            case "civic":
+                return new Civic();
+            case "fit":
+                return new Fit();
+            default:
+                throw new IllegalArgumentException("Honda nao fabrica: " + modelo);
+        }
+    }
+}
