@@ -1,5 +1,3 @@
-// Classe base só para nao repetir o mesmo codigo de start/drive/stop em todos
-// os modelos. Cada veiculo concreto guarda o proprio nome.
 public abstract class AbstractVehicle implements IVehicle {
 
     protected final String nome;

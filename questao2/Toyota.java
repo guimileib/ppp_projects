@@ -1,5 +1,3 @@
-// SINGLETON: existe apenas uma fabricante Toyota no sistema.
-// Construtor privado + getInstance() garantem a instancia unica.
 public class Toyota implements IVehicleMaker {
 
     private static Toyota instancia;
@@ -14,7 +12,6 @@ public class Toyota implements IVehicleMaker {
         return instancia;
     }
 
-    // FACTORY: traduz o nome do modelo no objeto concreto correspondente.
     @Override
     public IVehicle makeVehicle(String modelo) {
         switch (modelo.toLowerCase()) {

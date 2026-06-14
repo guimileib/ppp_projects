@@ -2,11 +2,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-        // Pegamos as fabricantes pelo Singleton (sempre a mesma instancia).
         FabricanteCelular apple = Apple.getInstance();
         FabricanteCelular samsung = Samsung.getInstance();
 
-        // A fabrica monta o celular a partir do nome do modelo.
         Celular iphoneX = apple.constroiCelular("iphoneX");
         Celular iphoneS = apple.constroiCelular("iphoneS");
         Celular galaxy8 = samsung.constroiCelular("galaxy8");
@@ -25,7 +23,6 @@ public class Main {
         galaxy20.fazLigacao();
         galaxy20.tiraFoto();
 
-        // Prova rapida de que o Singleton devolve sempre o mesmo objeto:
         System.out.println();
         System.out.println("Apple.getInstance() == Apple.getInstance() ? "
                 + (Apple.getInstance() == apple));

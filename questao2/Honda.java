@@ -1,4 +1,3 @@
-// SINGLETON da fabricante Honda, mesmo esquema da Toyota.
 public class Honda implements IVehicleMaker {
 
     private static Honda instancia;
@@ -13,7 +12,6 @@ public class Honda implements IVehicleMaker {
         return instancia;
     }
 
-    // FACTORY com os modelos da Honda.
     @Override
     public IVehicle makeVehicle(String modelo) {
         switch (modelo.toLowerCase()) {

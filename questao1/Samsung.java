@@ -1,4 +1,3 @@
-// Mesma ideia da Apple: a Samsung tambem e um Singleton.
 public class Samsung implements FabricanteCelular {
 
     private static Samsung instancia;
