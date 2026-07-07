@@ -1,9 +1,14 @@
-# Laboratório 2 - Padrões de Projeto (Fábrica e Singleton)
+# Princípios e Padrões de Projetos 
 
-Princípios e Padrões de Projetos - Guilherme Mileib
+Autor: Guilherme Mileib 
 
+## Laboratório 1. OCP, SRP, ISP
+3 exercícios de aplicação dos princípios OCP, SRP e ISP. Cada exercício contém uma descrição do problema, a solução proposta e o código-fonte correspondente.
+
+## Laboratório 2. Sigleton and Factory 
 Soluções das duas questões do laboratório. Em cada questão são usados os
 padrões Factory (para construir os produtos a partir do nome do modelo)
 e Singleton (para garantir uma única instância de cada fabricante).
+
 
 
