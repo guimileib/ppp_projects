@@ -18,11 +18,11 @@ public class Toyota implements IVehicleMaker{
     // factory, concentra toda criação dos carros aqui, nada por fora
     @Override
     public IVehicle makeVehicle(String modelo){
-        if (modelo.equals("Fit")){
+        if (modelo.equals("Corolla")){
             return new Corolla();
-        } else if(modelo.equals("Civic")){
+        } else if(modelo.equals("Hilux")){
             return new Hilux();
-        } else if(modelo.equals("City")){
+        } else if(modelo.equals("Etios")){
             return new Etios();
         }
         return null;

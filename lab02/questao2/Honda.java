@@ -18,12 +18,12 @@ public class Honda implements IVehicleMaker{
     // factory, concentra toda criação dos carros aqui, nada por fora
     @Override
     public IVehicle makeVehicle(String modelo){
-        if (modelo.equals("Corolla")){
-            return new Corolla();
-        } else if(modelo.equals("Hilux")){
-            return new Hilux();
-        } else if(modelo.equals("Etios")){
-            return new Etios();
+        if (modelo.equals("Fit")){
+            return new Fit();
+        } else if(modelo.equals("Civic")){
+            return new Civic();
+        } else if(modelo.equals("City")){
+            return new City();
         }
         return null;
     }
