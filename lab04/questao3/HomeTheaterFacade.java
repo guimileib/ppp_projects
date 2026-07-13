@@ -18,6 +18,7 @@ class HomeTheaterFacade {
     }
 
     public void verFilme(String filme, double volume){
+        System.out.println("Começando Sessão Cinema....");
         l.ligarLuzes();
         mp.ligarPipoqueira();
         mp.arrebentarPipoca();
@@ -31,6 +32,7 @@ class HomeTheaterFacade {
 
 
     public void fimDoFilme(){
+        System.out.println("Desligando Sessão Cinema ....");
         l.apagarLuzes();
         mp.desligarPipoqueira();
         amp.setTomada(false);

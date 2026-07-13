@@ -12,7 +12,7 @@ public class Main{
 
         HomeTheaterFacade home = new HomeTheaterFacade(mp, l, ps, amp, pj, tl);
         home.verFilme("Harry Potter 7", 20);
-
+        System.out.println(" ");
         home.fimDoFilme();
     }
 }
