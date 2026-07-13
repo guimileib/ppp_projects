@@ -9,5 +9,9 @@ public class Pizzaria {
         pedido1 = new Tomate(pedido1);
 
         System.out.println(pedido1.getDescricao());
+
+        // fazendo mostrando o decorator
+        Pizza portuguesa = new Tomate(new Ovo(new Queijo(new MassaEspessa())));
+        System.out.println(portuguesa.getDescricao() + portuguesa.getValor());
     }
 }
