@@ -5,9 +5,16 @@ public class Main {
         Cafe cafe = new Cafe();
         cafe.adicionarCondimentos();
         cafe.prepararBebida();
+
+        System.out.println("");
         
         Cha cha = new Cha();
         cha.prepararReceita();
         cha.adicionarCondimentos();
+        
+        System.out.println("");
+        
+        Capuccino capuccino = new Capuccino();
+        capuccino.prepararReceita();
     }
 }
