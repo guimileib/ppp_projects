@@ -1,4 +1,8 @@
 package lab06.questao2;
+// A diferença do Template para Decorator:
+// Template: é usada herança subclasse sobrescreve passos, 
+// fixa um esqueleto e varia os passos.
+// Decorator: embrulha a estrutura empilha o comportamento a uma base.
 
 public class Main {
     public static void main(String[] args) {
